@@ -1,0 +1,413 @@
+ /* body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+  margin: 0 0 1em;
+}
+
+.programs,
+.program-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 50px;
+  padding: 3px;
+  justify-content: space-between;
+}
+
+.program,
+.program-container {
+  width: calc(25% - 20px);
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.program:hover,
+.program-container:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+}
+
+.program img,
+.program-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.program:hover img,
+.program-container:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  margin-top: 10px;
+}
+
+.program-header {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.program-paragraph {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.content {
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .program,
+  .program-container {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .program,
+  .program-container {
+    width: 100%;
+  }
+}
+ .content0 {
+  margin: 50px auto;
+  padding: 40px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content0 h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content0 p {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.content0 p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .content0 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .content0 h1 {
+    font-size: 2rem;
+  }
+
+  .content0 p {
+    font-size: 1rem;
+  }
+} 
+ */
+
+
+
+
+/* .top {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.program {
+  width: 45%;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.program:hover {
+  transform: translateY(-10px);
+}
+
+.program img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  padding: 15px;
+  text-align: center;
+}
+
+.caption h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.caption p {
+  font-size: 1rem;
+  color: #777;
+}
+
+
+.content0 {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content0 h1 {
+  padding: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.content0 p {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content0 p.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content0 p.prev {
+  transform: translateX(-100%);
+}
+
+.content0 p.next {
+  transform: translateX(100%);
+}
+
+
+@media (max-width: 768px) {
+  .program {
+    width: 100%;
+  }
+
+  .caption h2 {
+    font-size: 1.2rem;
+  }
+
+  .caption p {
+    font-size: 0.9rem;
+  }
+
+  .content0 h1 {
+    font-size: 1.5rem;
+  }
+
+  .content0 p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+ */
+
+
+ /* Base styling for the container */
+.top {
+  padding: 20px;
+
+}
+h2{
+  text-align:center;
+  display: block;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Styling for the program sections */
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.program {
+  width: 45%;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.program:hover {
+  transform: translateY(-10px);
+}
+
+
+.caption {
+  padding: 15px;
+  text-align: center;
+}
+
+.caption h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.caption p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Slideshow container styling */
+.content0 {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content0 h1 {
+  padding: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.content0 p {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 60px; 
+  left: 0;
+}
+
+.content0 p.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content0 p.prev {
+  transform: translateX(-100%);
+}
+
+.content0 p.next {
+  transform: translateX(100%);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .program {
+    width: 100%;
+  }
+
+  .caption h2 {
+    font-size: 1.2rem;
+  }
+
+  .caption p {
+    font-size: 0.9rem;
+  }
+
+  .content0 h1 {
+    font-size: 1.5rem;
+  }
+
+  .content0 p {
+    font-size: 0.9rem;
+  }
+}
+
+

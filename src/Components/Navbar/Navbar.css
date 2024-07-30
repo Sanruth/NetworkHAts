@@ -1,0 +1,74 @@
+ /* @import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap"); */
+nav {
+  width: 100%;
+  color: #fff;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+.logo {
+    width: 110px;
+    height: 50px;
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+}
+.dark-nav {
+  background: #0aa8a0; 
+  transition: 0.5s;
+}
+.menu-icon {
+  display: none;
+}
+/* Media query */
+@media (max-width: 1000px) {
+  .logo {
+    width: 140px;
+  }
+  nav ul li {
+    margin: 10px 15px;
+  }
+}
+@media (max-width: 840px) {
+  nav {
+    padding: 15px 0;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    bottom: 0;
+    background: rgb(115, 212, 204);
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px;
+    transition: right 0.5s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px 40px;
+  }
+  .menu-icon {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+  .hide-mobile-menu {
+    right: -200px;
+  }
+  .show-mobile-menu {
+    right: 0;
+  }
+}
+

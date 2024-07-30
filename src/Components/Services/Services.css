@@ -1,0 +1,99 @@
+.service-container {
+  padding: 20px;
+  background: url();
+ 
+}
+
+h5 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  background: url();
+}
+
+h5::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 40px;
+    background-color: #6195FF;
+    margin-top: 20px;
+}
+
+.services-programs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.service-program {
+  width: 45%;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-program:hover {
+  transform: translateY(-10px);
+}
+
+.service-caption {
+  padding: 15px;
+  text-align: center;
+}
+
+.service-caption h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.service-caption p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.service-caption button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.service-caption button:hover {
+  background-color: #0056b3;
+}
+
+
+#more3, #more4, #more5, #more6 {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .service-program {
+    width: 100%;
+  }
+
+  .service-caption h2 {
+    font-size: 1.2rem;
+  }
+
+  .service-caption p {
+    font-size: 0.9rem;
+  }
+
+  .service-caption button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+} 
